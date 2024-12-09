@@ -66,3 +66,12 @@ vergroten.addEventListener('click', vergroot)
 function vergroot(){
   vergroten.classList.toggle('vergroten')
 }
+
+let kleurencyclus = document.querySelector('a:nth-of-type(4)')
+
+kleurencyclus/addEventListener('mousedown', colorcycle)
+
+function colorcycle(){
+  kleurencyclus.classList.toggle('RGB')
+}
+

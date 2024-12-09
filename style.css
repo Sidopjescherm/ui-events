@@ -82,7 +82,7 @@ a:nth-of-type(12) {
 
 /* Hieronder komen jouw animaties */
 .bibberlink{
-  animation: bibberlink 2s;
+  animation: bibberlink 0.3s infinite;
 }
 
 @keyframes bibberlink {
@@ -155,3 +155,38 @@ a:nth-of-type(12) {
     scale: 200%;
   }
 }
+
+.RGB{
+  animation-name: colorcycle;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  color: white;
+  border-color: transparent;
+}
+
+@keyframes colorcycle {
+  10%, 40%, 70%, 100%{
+    background: repeating-radial-gradient(red, orange, yellow, green, cyan, blue);
+  }
+
+  15%, 45%, 75%{
+    background: repeating-radial-gradient(blue, red, orange, yellow, green, cyan);
+  }
+
+  20%, 50%, 80%{
+    background: repeating-radial-gradient(cyan, blue, red, orange, yellow, green);
+  }
+
+  25%, 55%, 85%{
+    background: repeating-radial-gradient(green, cyan, blue, red, orange, yellow);
+  }
+
+  30%, 60%, 90%{
+    background: repeating-radial-gradient(yellow, green, cyan, blue, red, orange);
+  }
+  
+  35%, 65%, 95%{
+    background: repeating-radial-gradient(orange, yellow, green, cyan, blue, red);
+  }
+}
+
