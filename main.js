@@ -75,3 +75,10 @@ function colorcycle(){
   kleurencyclus.classList.toggle('RGB')
 }
 
+let stretchngo = document.querySelector('a:nth-of-type(7)')
+
+stretchngo.addEventListener('click', stretchy)
+
+function stretchy(){
+  stretchngo.classList.toggle('rekenren')
+}

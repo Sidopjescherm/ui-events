@@ -158,7 +158,7 @@ a:nth-of-type(12) {
 
 .RGB{
   animation-name: colorcycle;
-  animation-duration: 1s;
+  animation-duration: 1.2s;
   animation-iteration-count: infinite;
   color: white;
   border-color: transparent;
@@ -190,3 +190,8 @@ a:nth-of-type(12) {
   }
 }
 
+/*hier is de animatie voor de 'the' knop*/
+.rekenren{
+  animation: stretchy;
+  animation-duration: 10s;
+}
