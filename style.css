@@ -193,5 +193,16 @@ a:nth-of-type(12) {
 /*hier is de animatie voor de 'the' knop*/
 .rekenren{
   animation: stretchy;
-  animation-duration: 10s;
+  animation-duration: 0,3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes stretchy{
+  100%{
+    height: 7em;
+    width: 3.5em;
+    align-self: center;
+    justify-self: center;
+  }
 }
