@@ -204,14 +204,34 @@ a:nth-of-type(12) {
 
 /*hier is de animatie voor de 'the' knop*/
 .rekenren{
-  animation: stretchy;
-  animation-duration: 10s;
+  animation: Sonic;
+  animation-duration: 5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
-@keyframes stretchy{
-  3%{
-    transform: scale(0.5, 1.5);
+@keyframes Sonic{
+  10%{
+    transform: scale(0.2, 2);
+  }
+
+  50%{
+    transform: scale(0.2, 2);
+  }
+  80%{
+    rotate: 4320deg;
+  }
+
+  90%{
+      transform: scale(0.2, 0.5);
+
+      border-color: #da2528;
+      background-color:	#3061e3;
+      color: #ffd78f;
+  }
+
+  100%{
+    transform: translateX(-36em);
+    display: none;
   }
 }

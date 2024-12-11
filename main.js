@@ -77,8 +77,8 @@ function colorcycle(){
 
 let stretchngo = document.querySelector('a:nth-of-type(5)')
 
-stretchngo.addEventListener('click', stretchy)
+stretchngo.addEventListener('click', Sonic)
 
-function stretchy(){
+function Sonic(){
   stretchngo.classList.toggle('rekenren')
 }
