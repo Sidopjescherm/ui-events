@@ -82,3 +82,13 @@ stretchngo.addEventListener('click', Sonic)
 function Sonic(){
   stretchngo.classList.toggle('rekenren')
 }
+
+/*hier moet nog de Fix bounce button komen*/
+
+let glowing = document.querySelector('a:nth-of-type(7)')
+
+glowing.addEventListener('click', gloei)
+
+function gloei(){
+  glowing.classList.toggle('oplichten')
+}

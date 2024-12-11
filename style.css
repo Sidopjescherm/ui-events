@@ -198,8 +198,6 @@ a:nth-of-type(12) {
   5%, 35%, 65%, 95%{
     background: repeating-radial-gradient(orange, yellow, green, cyan, blue, red);
   }
-
-  
 }
 
 /*hier is de animatie voor de 'the' knop*/
@@ -233,5 +231,24 @@ a:nth-of-type(12) {
   100%{
     transform: translateX(-36em);
     display: none;
+  }
+}
+
+/*hier komt nog de Fix bounce button*/
+
+.oplichten{
+  animation: gloei;
+  animation-iteration-count: infinite;
+  animation-duration: 0.9s;
+  border: none;
+}
+
+@keyframes gloei {
+  0%, 20%, 40%, 60%, 80%, 100%{
+    box-shadow: 0em 0em 0.8em 0.3em #E0AA3E;
+  }
+  10%, 30%, 50%, 70%, 90%{
+    box-shadow: 0em 0em 0.8em 0.3em #F9F295;
+
   }
 }
