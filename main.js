@@ -31,7 +31,7 @@ let bibberlink = document.querySelector('a:nth-of-type(2)')
 
 // Stap 2: voeg de (click) event listener toe aan de link, met een callback functie
 // In dit geval wordt de jumpHandler functie aangeroepen, zodra je op het linkje klikt
-bibberlink.addEventListener('click', bibberHandler)
+bibberlink.addEventListener('mouseover', bibberHandler)
 
 // Deze jumpHandler functie staat klaar voor als we 'm aanroepen; deze wordt dus
 // _niet_ meteen bij het laden van de pagina aangeroepen
@@ -75,7 +75,7 @@ function colorcycle(){
   kleurencyclus.classList.toggle('RGB')
 }
 
-let stretchngo = document.querySelector('a:nth-of-type(7)')
+let stretchngo = document.querySelector('a:nth-of-type(5)')
 
 stretchngo.addEventListener('click', stretchy)
 
