@@ -137,9 +137,7 @@ a:nth-of-type(12) {
 }
 
 .vergroten{
-  animation-name: vergroot;
-  animation-duration: 1.2s;
-  animation-iteration-count: 1;
+  animation: vergroot 2s forwards;
 }
 
 @keyframes vergroot {
@@ -149,10 +147,21 @@ a:nth-of-type(12) {
 
   50%{
     scale: 150%;
+    rotate: 20deg;
+    background-color: var(--secondary);
+    color: var(--primary);
+  }
+
+  99%{
+    scale: 200%;
+    rotate: -20deg;
+    background-color: var(--highlight-secondary);
+    color: var(--primary );
   }
 
   100%{
     scale: 200%;
+    rotate: 0deg;
   }
 }
 
