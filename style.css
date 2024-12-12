@@ -41,6 +41,7 @@ a {
 /* UI Event Classes */
 
 /* Jump animation on the interaction link */
+/*Deze animatie moet nog verplaatst worden naar beneden als de andere knoppen gemaakt zijn zodat het op de juiste plaats staat*/
 a:nth-of-type(12) {
   position: relative;
   background: var(--highlight-secondary);
@@ -81,22 +82,8 @@ a:nth-of-type(12) {
 
 
 /* Hieronder komen jouw animaties */
-.bibberlink{
-  animation: bibberlink 0.3s infinite;
-}
 
-@keyframes bibberlink {
-  0%, 100% {
-    transform: translateX(0em);
-  }
-  10%, 20%, 30%, 40%, 50%, 60%, 70%, 80% {
-      transform: translateX(-2px);
-  }
-  15%, 25%, 35%, 45%, 55%, 65%, 75% {
-    transform: translateX(2px);
-  }
-}
-
+/*Hier is de animatie voor 'Frontend' link*/
 .swipe{
   animation: dissapear 2s forwards;
 }
@@ -114,14 +101,14 @@ a:nth-of-type(12) {
     0% {
       opacity: 1;
     }
-  
+    
     10%, 20%, 30%, 40%, 50%, 60%, 70%, 80% {
       transform: translateX(-10px);
       color: black;
       background-color: white;
       rotate: 0deg;
     }
-  
+    
     15%, 25%, 35%, 45%, 55%, 65%, 75% {
       transform: translateX(10px);
       color: white;
@@ -136,6 +123,24 @@ a:nth-of-type(12) {
   }
 }
 
+/*Hier is de animatie voor de 'Design' link*/
+.bibberlink{
+  animation: bibberlink 0.3s infinite;
+}
+
+@keyframes bibberlink {
+  0%, 100% {
+    transform: translateX(0em);
+  }
+  10%, 20%, 30%, 40%, 50%, 60%, 70%, 80% {
+      transform: translateX(-2px);
+  }
+  15%, 25%, 35%, 45%, 55%, 65%, 75% {
+    transform: translateX(2px);
+  }
+}
+
+/*Hier is de animatie voor de '&' link*/
 .vergroten{
   animation: vergroot 2s forwards;
 }
@@ -165,6 +170,7 @@ a:nth-of-type(12) {
   }
 }
 
+/*Hier is de animatie voor de 'Development' link*/
 .RGB{
   animation-name: colorcycle;
   animation-duration: 1.2s;
@@ -200,7 +206,8 @@ a:nth-of-type(12) {
   }
 }
 
-/*hier is de animatie voor de 'the' knop*/
+/*hier is de animatie voor de 'fix' knop*/
+
 .rekenren{
   animation: Sonic;
   animation-duration: 5s;
@@ -236,6 +243,7 @@ a:nth-of-type(12) {
 
 /*hier komt nog de Fix bounce button*/
 
+/*Hier is de gloei animatie voor de 'The' link*/
 .oplichten{
   animation: gloei;
   animation-iteration-count: infinite;
