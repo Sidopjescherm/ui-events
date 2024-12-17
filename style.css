@@ -167,6 +167,9 @@ a:nth-of-type(12) {
   100%{
     scale: 200%;
     rotate: 0deg;
+    color: white;
+    background-color: darkblue;
+    border-color: white;
   }
 }
 
