@@ -65,9 +65,9 @@ function Sonic(){
 
 let bouncing = document.querySelector('a:nth-of-type(6)')
 
-bouncing.addEventListener('mouseout', stuiter)
+bouncing.addEventListener('click', stuiter)
 
-function stuiter(event){
+function stuiter(){
   bouncing.classList.toggle('bounce')
 }
 

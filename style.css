@@ -242,6 +242,57 @@ a:nth-of-type(12) {
 }
 
 /*hier komt nog de Fix bounce button*/
+.bounce {
+  animation: stuiter;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes stuiter {
+  0%, 100%{
+    translate: 0 0;
+  }
+
+  19%{
+    background-color: var(--secondary)
+  }
+  20%{
+    translate: 30.8vw 39vw;
+    background-color: cyan;
+  }
+
+  39%{
+    background-color: cyan;
+  }
+  40%{
+    translate: -63vw -2.5vw;
+    background-color: #da2528; 
+    color: black; 
+  }
+
+  59%{
+    background-color: #da2528;
+    color: black;
+  }
+  60%{
+    translate: -30vw 41vw;
+    background-color: #7ce7c9;
+  }
+
+  79%{
+    background-color: #7ce7c9;
+  }
+  80%{
+    translate: -2.5vw -2.5vw;
+    background-color: #9d7beb;
+  }
+
+  99%{
+    background-color: #9d7beb;
+    color: black;
+  }
+}
 
 /*Hier is de gloei animatie voor de 'The' link*/
 .oplichten{
